@@ -1,4 +1,6 @@
 {
     "API_URL": "api",
-    "BASE_HREF": "http://localhost:1280/publicites"
+    "BASE_HREF": "/",
+    "API_URLWP": "https://effix-commerce.bianka.devwebgarneau.com/wp-json/wp/v2"
+
 }

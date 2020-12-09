@@ -1,0 +1,1 @@
+{"version":3,"file":"cardmodel.d.ts","sourceRoot":"","sources":["../../src/model/cardmodel.ts"],"names":[],"mappings":"AAAA,qBAAa,SAAS;IACX,MAAM,EAAE,MAAM,CAAC;IACf,KAAK,EAAE,MAAM,CAAC;IACd,OAAO,EAAE,MAAM,CAAC;IAChB,IAAI,EAAE,IAAI,CAAC;IACX,IAAI,EAAE,MAAM,CAAC;IACb,kBAAkB,EAAE,MAAM,CAAC;WAEpB,QAAQ,CAAC,aAAa,EAAE,SAAS;CAMlD"}

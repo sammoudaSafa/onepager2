@@ -1,13 +1,13 @@
-import axios from 'axios';
-import { API_URL } from 'config.json';
 
-export class Api {
+import { API_URLWP } from 'configwp.json';
+
+export class Apiwp {
     public axios: any;
-    private header = API_URL;
+    private header = API_URLWP;
 
     constructor(header?: string) {
         if (header) {
-            this.header = API_URL + header;
+            this.header = API_URLWP + header;
         }
     }
 
@@ -40,25 +40,16 @@ export class Api {
         return result;
     }
 
-    // public async getJson(url: string) {
-    //     const result = await fetch(this.header + url, {
-    //         method: 'GET',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         credentials: 'include'
-    //     });
-    //     await this.validateResult(result);
-    //     return result.json();
-    // }
-    public async getAxios(url: string) {
-        const result=axios.get(this.header + url, {
+    public async getJson(url: string) {
+        const result = await fetch(this.header + url, {
+            method: 'GET',
             headers: {
-                'Content-Type': 'application/json',
-                 Accept: 'application/json'
-            }
-        })
-        return result;
+                'content-type': 'application/json'
+            },
+            credentials: 'include'
+        });
+        await this.validateResult(result);
+        return result.json();
     }
 
     public async putGetJson(url: string, id: string | number, body?: any) {
