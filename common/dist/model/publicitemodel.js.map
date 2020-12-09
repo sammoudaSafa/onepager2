@@ -1,0 +1,1 @@
+{"version":3,"file":"publicitemodel.js","sourceRoot":"","sources":["../../src/model/publicitemodel.ts"],"names":[],"mappings":";;;AACA,MAAa,cAAc;IAUhB,MAAM,CAAC,QAAQ,CAAC,kBAAkC;QACrD,MAAM,cAAc,GAAG,IAAI,cAAc,CAAC;QAC1C,MAAM,CAAC,MAAM,CAAC,cAAc,EAAE,kBAAkB,CAAC,CAAC;QAClD,OAAO,cAAc,CAAC;IAC1B,CAAC;CACJ;AAfD,wCAeC"}

@@ -1,0 +1,52 @@
+form {
+    input[type="text"] {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        font: {
+            family: $fontFamily;
+            weight: 300;
+        }
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 0.6rem;
+        margin: {
+            right: 1rem;
+            bottom: 1rem;
+        }
+
+        &::placeholder {
+            font: {
+                family: $fontFamily;
+                weight: 300;
+            }
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #bbb;
+        }
+    }
+
+    input[type="password"] {
+        @extend input[type="text"];
+    }
+
+    select {
+        @extend input[type="text"];
+    }
+
+    label {
+        font: {
+            size: 1.25rem;
+            weight: 500;
+        }
+        display: block;
+        margin-bottom: 0.6rem;
+    }
+
+    input[type="submit"] {
+        @include button;
+        float: right;
+    }
+}

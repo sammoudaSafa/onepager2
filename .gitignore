@@ -1,0 +1,9 @@
+config.js
+node_modules
+build
+.vscode
+config.ts
+yarn-error.log
+files
+report.html
+photos

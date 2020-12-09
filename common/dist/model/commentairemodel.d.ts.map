@@ -1,0 +1,1 @@
+{"version":3,"file":"commentairemodel.d.ts","sourceRoot":"","sources":["../../src/model/commentairemodel.ts"],"names":[],"mappings":"AAAA,qBAAa,gBAAgB;IAClB,aAAa,EAAE,MAAM,CAAC;IACtB,IAAI,EAAE,MAAM,CAAC;IACb,OAAO,EAAE,MAAM,CAAC;IAChB,IAAI,EAAE,IAAI,CAAC;IACX,aAAa,CAAC,EAAE,MAAM,CAAC;IACvB,IAAI,EAAE,MAAM,CAAC;WAEN,QAAQ,CAAC,oBAAoB,EAAE,gBAAgB;CAMhE"}

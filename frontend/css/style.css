@@ -1,0 +1,266 @@
+:root {
+  font-size: 14px;
+}
+
+#coreContainer {
+  width: 60vw;
+  margin: 10vh auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #0D365C;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+section.editor div.client-list {
+  margin-bottom: 2rem;
+}
+
+section.editor section.ad-info span.bold {
+  font-weight: 500;
+}
+
+section.editor div.preview {
+  margin: 5rem 0;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+section.editor div.preview-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.editor div.preview-flex-item {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.editor div.preview-flex-item p {
+  font-weight: 500;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+section.editor div.preview-flex-item .preview-img-large {
+  display: block;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+
+section.editor div.preview-flex-item .preview-img-large img {
+  width: 300px;
+}
+
+section.editor div.preview-flex-item .preview-img-small {
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+section.editor div.preview-flex-item .preview-img-small img {
+  width: 200px;
+}
+
+section.editor div.field {
+  margin: 5rem 0;
+}
+
+section.editor div.field label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+section.editor div.field input[name="Lien"], section.editor div.field input[name="Texte"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+section.editor div.container-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.editor div.container-images div.images {
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.editor div.container-images div.images img {
+  cursor: pointer;
+  width: 200px;
+}
+
+section.editor div.container-images .select {
+  background: #eee;
+}
+
+section.login {
+  width: 400px;
+  margin: auto;
+}
+
+span.online {
+  color: green;
+}
+
+span.offline {
+  color: red;
+}
+
+button {
+  background: #eee;
+  padding: .6rem 1rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button.logout {
+  float: right;
+}
+
+form input[type="text"], form input[type="password"], form select {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 0.6rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"]::-webkit-input-placeholder, form input[type="password"]::-webkit-input-placeholder, form select::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+form input[type="text"]:-ms-input-placeholder, form input[type="password"]:-ms-input-placeholder, form select:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+form input[type="text"]::-ms-input-placeholder, form input[type="password"]::-ms-input-placeholder, form select::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+form input[type="text"]::placeholder, form input[type="password"]::placeholder, form select::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+form input[type="text"]:focus, form input:focus[type="password"], form select:focus {
+  outline: none;
+  border-color: #bbb;
+}
+
+form label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+form input[type="submit"] {
+  background: #eee;
+  padding: .6rem 1rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  float: right;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  border-bottom: 1px solid #ddd;
+}
+
+table thead th {
+  text-align: left;
+  padding: .6rem 1rem;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+table tbody td {
+  padding: .6rem 1rem;
+}
+/*# sourceMappingURL=style.css.map */

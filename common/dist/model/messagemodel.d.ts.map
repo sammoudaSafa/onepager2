@@ -1,0 +1,1 @@
+{"version":3,"file":"messagemodel.d.ts","sourceRoot":"","sources":["../../src/model/messagemodel.ts"],"names":[],"mappings":"AAAA,qBAAa,YAAY;IACd,SAAS,EAAE,MAAM,CAAC;IAClB,YAAY,EAAE,MAAM,CAAC;WAEd,QAAQ,CAAC,gBAAgB,EAAE,YAAY;CAKxD"}
