@@ -7,8 +7,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(<>
-<Nav />
-<CardList />
+     <Nav />
+    <CardList />
     <PubList />
     <Footer /></>,
     document.getElementById('coreContainer'));

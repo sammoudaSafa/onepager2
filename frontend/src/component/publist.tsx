@@ -20,7 +20,7 @@ export class PubList extends React.Component<Props, State> {
     }
 
     public async componentDidMount() {
-         this.api.getAxios('/publicites').then(res =>{ this.setState({ pubs: res.data })});
+         this.api.getAxios('/publicites').then(response =>{ this.setState({ pubs: response.data })});
     }
 
     public render() {

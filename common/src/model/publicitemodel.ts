@@ -6,7 +6,7 @@ export class PubliciteModel {
     public message: string;
     public lien: string;
     public clientId: number;
-    public image: string;
+    public Image: string;
     public roles: string;
 
     public static fromJSON(jsonPubliciteModel: PubliciteModel) {

@@ -5,7 +5,7 @@ export declare class PubliciteModel {
     message: string;
     lien: string;
     clientId: number;
-    image: string;
+    Image: string;
     roles: string;
     static fromJSON(jsonPubliciteModel: PubliciteModel): PubliciteModel;
 }
