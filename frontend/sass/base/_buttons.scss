@@ -1,0 +1,28 @@
+@import "./mixins";
+
+.btn {
+     border-radius: $b-radius;
+     background: $color-primary;
+     color: $color-white;
+     padding: 1.2rem 1.6rem;
+     transition: all .4s;
+
+     &:hover {
+          background-color: rgba($color-primary, .8);
+     }
+
+     &--light {
+          background-color: $color-white;
+          color: $color-primary;
+          padding: 1.2rem 3rem;
+          transition: all .4s;
+
+          @include  responsive(tablet) { 
+               padding: 1.2rem 1.6rem;
+          }
+
+          &:hover {
+               background-color: rgba($color-white, .8);
+          }
+     }
+}
