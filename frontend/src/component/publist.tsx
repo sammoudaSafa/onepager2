@@ -1,37 +1,53 @@
-import { Api } from 'api';
-import { PubliciteModel } from 'common';
+import axios from 'axios';
 import React from 'react';
-import { PubCard} from './pubcard';
 
 
 interface Props { }
 interface State {
-    pubs?: PubliciteModel[];
+    pubs?: [];
 
 }
 
 export class PubList extends React.Component<Props, State> {
-    private api = new Api;
 
     constructor(props: Props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            pubs: [],
+        };
     }
 
     public async componentDidMount() {
-         this.api.getAxios('/publicites').then(response =>{ this.setState({ pubs: response.data })});
+        // this.api.getAxios('/publicites').then(res => { this.setState({ pubs: res.data }); });
+
+        axios.get('http://localhost:1280/publicites')
+            .then(res => this.setState({
+
+                pubs: res.data,
+            }))
+            .catch(err => console.log(err));
     }
 
     public render() {
-        const { pubs } = this.state;
-        if (!pubs) { return 'Chargement des nouvelles...'; }
+        const { pubs }: any = this.state;
+        if (!pubs) { return 'Chargement des publicités...'; }
 
         return <>
             <main>
                 <section>
-                    {pubs.map(pub =>
-                        <PubCard key={pub.publiciteId} pub={pub} />)}
+                    {pubs!.map(publicite => {
+                        return <>
+                            <tr key={publicite.publiciteId}>
+
+                                <img src={publicite.image} />
+
+                                <td>{publicite.nom_client} </td>
+                                <td><span className={publicite.status ? 'online' : 'offline'}>{publicite.status === 1 ? 'En ligne' : ' Hors ligne'} </span></td>
+
+                            </tr>
+                        </>;
+                    })};
                 </section>
             </main>
         </>;
