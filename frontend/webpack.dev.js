@@ -17,11 +17,11 @@ const devConfig = {
     ],
     devServer: {
         inline: false,
-        port: 8080,
+        port: 8081,
         historyApiFallback: true,
         proxy: {
             "/api": {
-                target: "http://localhost:1280",
+                target: "http://localhost:1281",
                 pathRewrite: { '^/api': '' }
             }
         },
@@ -34,7 +34,7 @@ const devConfig = {
 
 if (baseHref) {
     devConfig.devServer.proxy[baseHref] = {
-        target: "http://localhost:8080",
+        target: "http://localhost:8081",
         pathRewrite: { [`^${baseHref}`]: '' }
     };
 }
