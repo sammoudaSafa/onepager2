@@ -1,13 +1,11 @@
 import { Apiwp } from 'apiwp';
-import { CardModel } from 'common';
 import React from 'react';
+import { CardModel } from '../../../common';
 import { ECardItem } from './ecarditem';
-
 
 interface Props { }
 interface State {
     cards?: CardModel[];
-
 }
 
 export class CardList extends React.Component<Props, State> {
