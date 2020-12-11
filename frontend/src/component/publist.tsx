@@ -1,15 +1,12 @@
 import axios from 'axios';
 import React from 'react';
 
-
 interface Props { }
 interface State {
     pubs?: [];
-
 }
 
 export class PubList extends React.Component<Props, State> {
-
     constructor(props: Props) {
         super(props);
 
@@ -19,8 +16,6 @@ export class PubList extends React.Component<Props, State> {
     }
 
     public async componentDidMount() {
-        // this.api.getAxios('/publicites').then(res => { this.setState({ pubs: res.data }); });
-
         axios.get('http://localhost:1280/publicites')
             .then(res => this.setState({
 
