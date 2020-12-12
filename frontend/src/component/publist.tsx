@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React from 'react';
 
-
 interface Props { }
 interface State {
     pubs?: [];

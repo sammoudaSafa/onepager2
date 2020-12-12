@@ -1,4 +1,4 @@
-import { CardModel } from 'common';
+import { CardModel } from 'model';
 import React from 'react';
 
 interface Props { card: CardModel; }

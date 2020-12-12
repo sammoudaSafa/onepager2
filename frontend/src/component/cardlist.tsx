@@ -1,5 +1,5 @@
 import { Apiwp } from 'apiwp';
-import { CardModel } from 'common';
+import { CardModel } from 'model';
 import React from 'react';
 import { ECardItem } from './ecarditem';
 
