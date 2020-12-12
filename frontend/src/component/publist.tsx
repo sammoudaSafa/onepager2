@@ -5,7 +5,6 @@ import React from 'react';
 interface Props { }
 interface State {
     pubs?: [];
-
 }
 
 export class PubList extends React.Component<Props, State> {
@@ -19,8 +18,6 @@ export class PubList extends React.Component<Props, State> {
     }
 
     public async componentDidMount() {
-        // this.api.getAxios('/publicites').then(res => { this.setState({ pubs: res.data }); });
-
         axios.get('http://localhost:1280/publicites')
             .then(res => this.setState({
 
@@ -31,25 +28,28 @@ export class PubList extends React.Component<Props, State> {
 
     public render() {
         const { pubs }: any = this.state;
+        const pub: any = this.state.pubs?.sort(() => Math.random() - Math.random()).find(() => true);
         if (!pubs) { return 'Chargement des publicités...'; }
 
+        const smallpub = {
+            width: "200px",
+            height: "200px"
+        };
+
+        const bigpub = {
+            width: "300px",
+            height: "250px"
+        };
+
         return <>
-            <main>
-                <section>
-                    {pubs!.map(publicite => {
-                        return <>
-                            <tr key={publicite.publiciteId}>
-
-                                <img src={publicite.image} />
-
-                                <td>{publicite.nom_client} </td>
-                                <td><span className={publicite.status ? 'online' : 'offline'}>{publicite.status === 1 ? 'En ligne' : ' Hors ligne'} </span></td>
-
-                            </tr>
-                        </>;
-                    })};
-                </section>
-            </main>
+            {pub &&
+                <aside className='pub'>
+                    <a href={pub.lien}>
+                        <img src={pub.image} alt={pub.lien} className='pub' style={[smallpub, bigpub].sort(() => Math.random() - Math.random()).find(() => true)} />
+                        <p>{pub.message}</p>
+                    </a>
+                </aside>
+            }
         </>;
     }
 }
